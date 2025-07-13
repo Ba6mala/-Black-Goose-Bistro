@@ -5,46 +5,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="A simple web to order pizza online">
     <meta name="author" content="Basmala">
+    <link rel="stylesheet" href="./css/style.css">
     <title> Black Goose Bistro</title>
 </head>
 <body>
    <header>
         <nav>
-            <a href="">Main</a>
-            <a href="">Make an Order</a>
-            <a href="">Contact Us</a>
+            <a href="#">Main</a>
+            <a href="#">Make an Order</a>
+            <a href="#">Contact Us</a>
         </nav>
    </header> 
    <main>
         <section>
             <h1>Black Goose Bistro | Pizza-on-Demand</h1>
             <p>Our 12" wood-fired pizza are available for delivery, build your custom pizza and we'll deliver it within an hour.</p>
-            <form action="">
+            <form>
                 <fieldset>
                     <legend>Your Information</legend>
-                    <br>
-                    <label for="name">Name:</label>
-                    <input type="text" name="userName" id="name" style="margin-left: 106px;">
-                    <br>
-                    <label for="add">Address:</label>
-                    <input type="text" name="address" id="add" style="margin-left: 91px;">
-                    <br>
-                    <label for="tele">Telephone Number:</label>
-                    <input type="tel" name="telephone" id="tele" style="margin-left: 20px;">
-                    <br>
-                    <label for="email">Email:</label>
-                    <input type="email" name="email" id="email" style="margin-left: 105px;">
-                    <br>
-                    <label for="text">Delivery Instruction:</label>
-                    <br>
-                    <textarea name="massage" id="text" cols="50" rows="4">NO more than 400 character long</textarea>
-                    <br><br>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <label for="name">Name:</label>
+                                </td>
+                                <td>
+                                    <input type="text" name="userName" id="name">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="add">Address:</label>
+                                </td>
+                                <td>
+                                    <input type="text" name="address" id="add">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="tele">Telephone Number:</label>
+                                </td>
+                                <td>
+                                    <input type="tel" name="telephone" id="tele">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="email">Email:</label>
+                                </td>
+                                <td>
+                                    <input type="email" name="email" id="email">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <label for="text">Delivery Instruction:</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <textarea name="massage" id="text" cols="50" rows="4" placeholder="NO more than 400 character long"></textarea>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>        
                 </fieldset>
-            </form>
-        </section>
-        <section>
-            <h1>Design Your Dream Pizza:</h1>
-            <form action="">
+                <h2>Design Your Dream Pizza:</h2>
                 <fieldset>
                     <legend>Pizza specs</legend>
                     <fieldset>
@@ -98,12 +124,13 @@
                 </fieldset>
                 <br>
                 <div>
-                    <input type="submit" value="Bring me a pizza!">
-                    <input type="reset" value="Reset">
+                    <input class="btn" type="submit" value="Bring me a pizza!">
+                    <input class="btn" type="reset" value="Reset">
                 </div>
             </form>
         </section>
         <br><br>
    </main>
+   <script src="./js/main.js"></script>
 </body>
 </html>
